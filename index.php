@@ -3,7 +3,7 @@ $ch = curl_init();
 echo "/credential";
 $params = '{
 	"key":"123456",
-	"shared_secret":"123456"
+	"shared_secret":"NmMyZDQ4YWI4YTJkZj/BkYzkxMjU4YzRkOWQwMzMyYzkzM+jAzM2FhM2FjYmU3YjI5ZWZkNzMyYjNmYWUxMjFjNg=="
 }';
 curl_setopt($ch, CURLOPT_URL, "http://localhost:7001/MasterDevel/webresources/credential");
 $headers = array(
@@ -27,7 +27,8 @@ curl_setopt($ch1, CURLOPT_URL, "http://localhost:7001/MasterDevel/webresources/m
 $headers = array(
     'Content-Type: application/json',
     'X-Key: 123456',
-    'X-Route: message'
+    'X-Route: message',
+    'X-Signature: NmMyZDQ4YWI4YTJkZj/BkYzkxMjU4YzRkOWQwMzMyYzkzM+jAzM2FhM2FjYmU3YjI5ZWZkNzMyYjNmYWUxMjFjNg=='
 );
 curl_setopt($ch1, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($ch1, CURLOPT_RETURNTRANSFER, true);
@@ -44,7 +45,8 @@ curl_setopt($ch2, CURLOPT_URL, "http://localhost:7001/MasterDevel/webresources/m
 $headers = array(
     'Content-Type: application/json',
     'X-Key: 123456',
-    'X-Route: message'
+    'X-Route: message',
+    'X-Signature: NmMyZDQ4YWI4YTJkZj/BkYzkxMjU4YzRkOWQwMzMyYzkzM+jAzM2FhM2FjYmU3YjI5ZWZkNzMyYjNmYWUxMjFjNg=='
 );
 curl_setopt($ch2, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($ch2, CURLOPT_RETURNTRANSFER, true);
@@ -60,7 +62,8 @@ curl_setopt($ch3, CURLOPT_URL, "http://localhost:7001/MasterDevel/webresources/m
 $headers = array(
     'Content-Type: application/json',
     'X-Key: 123456',
-    'X-Route: message'
+    'X-Route: message',
+    'X-Signature: NmMyZDQ4YWI4YTJkZj/BkYzkxMjU4YzRkOWQwMzMyYzkzM+jAzM2FhM2FjYmU3YjI5ZWZkNzMyYjNmYWUxMjFjNg=='
 );
 curl_setopt($ch3, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($ch3, CURLOPT_RETURNTRANSFER, true);
